@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>Salud social</title>
+  <!-- loader-->
+  <link href="assets/css/pace.min.css" rel="stylesheet"/>
+  <script src="assets/js/pace.min.js"></script>
+  <!--favicon-->
+  <link rel="icon" href="images/app-medica (1).png" type="image/x-icon">
+  <!-- Vector CSS -->
+  <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+  <!-- Sidebar CSS-->
+  <link href="assets/css/sidebar-menu.css" rel="stylesheet"/>
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  
+</head>
+
+<body class="bg-theme bg-theme1">
+ 
+<!-- Start wrapper-->
+ <div id="wrapper">
+ 
+  <!--Start sidebar-wrapper-->
+   <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
+     <div class="brand-logo">
+     
+       <img src="images/logo.png">
+     
+   </div>
+   <ul class="sidebar-menu do-nicescrol">
+      <li class="sidebar-header">Menu de navegacion</li>
+      <li>
+        <a href="dashboard.html">
+          <img src="images/casa.png" alt=""> <span>INICIO</span>
+        </a>
+      </li>
+      <li>
+        <a href="personal.html">
+          <img src="images/cirujano.png" alt=""> <span>Personal</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="paciente.html">
+          <img src="images/paciente.png" alt=""></i> <span>Mis pacientes</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="cita-medica.html">
+          <img src="images/calendario.png" alt=""> <span>Programar cita</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="Orden-Medica.html">
+          <img src="images/examen-medico.png" alt=""> <span>Orden medica</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="login.html">
+          <img src="images/cerrar-sesion.png" alt=""><span>cerrar sesion</span>
+        </a>
+      </li>
+
+      <li class="sidebar-header">Etiquetas</li>
+      <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Importante</span></a></li>
+      <li><a href="javaScript:void();"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Advertencia</span></a></li>
+      <li><a href="javaScript:void();"><i class="zmdi zmdi-share text-info"></i> <span>Informacion</span></a></li>
+
+    </ul>
+   
+   </div>
+   <!--End sidebar-wrapper-->
+
+<!--Start topbar header-->
+<header class="topbar-nav">
+ <nav class="navbar navbar-expand fixed-top">
+  <ul class="navbar-nav mr-auto align-items-center">
+    <li class="nav-item">
+      <a class="nav-link toggle-menu" href="javascript:void();">
+       <i class="icon-menu menu-icon"></i>
+     </a>
+    </li>
+    <li class="nav-item">
+      <form class="search-bar">
+        <input type="text" class="form-control" placeholder="Buscar">
+         <a href="javascript:void();"><i class="icon-magnifier"></i></a>
+      </form>
+    </li>
+  </ul>
+     
+  <ul class="navbar-nav align-items-center right-nav-link">
+    <li class="nav-item dropdown-lg">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
+      <i class="fa fa-envelope-open-o"></i></a>
+    </li>
+    <li class="nav-item dropdown-lg">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();">
+      <i class="fa fa-bell-o"></i></a>
+    </li>
+    <li class="nav-item language">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret waves-effect" data-toggle="dropdown" href="javascript:void();"><i class="fa fa-flag"></i></a>
+      <ul class="dropdown-menu dropdown-menu-right">
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-gb mr-2"></i> Ingles</li>
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-fr mr-2"></i> Frances</li>
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-cn mr-2"></i> China</li>
+          <li class="dropdown-item"> <i class="flag-icon flag-icon-de mr-2"></i> Aleman</li>
+        </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown" href="#">
+        <span class="user-profile"><img src="img/perfil/profile.jpg" class="img-circle" alt="user avatar"></span>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-right">
+       <li class="dropdown-item user-details">
+        <a href="javaScript:void();">
+           <div class="media">
+             <div class="avatar"><img class="align-self-start mr-3" src="img/perfil/profile.jpg" alt="user avatar"></div>
+            <div class="media-body">
+            <h6 class="mt-2 user-title">ANDRES_123</h6>
+            <p class="user-subtitle">ANDRES_123@hotmail.com</p>
+            </div>
+           </div>
+          </a>
+        </li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-envelope mr-2"></i> Bandeja de entrada</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Cuenta</li>
+        <li class="dropdown-divider"></li>
+        <li class="dropdown-item"><i class="icon-settings mr-2"></i> Configurar</li>
+        <li class="dropdown-divider"></li>
+        <a href="login.html"> <i class="bi bi-x-circle-fill"></i><i class="icon-power mr-2"></i> Salir</li></a>
+       
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header>
+<!--End topbar header-->
+
+<div class="clearfix"></div>
+	
+  <div class="content-wrapper">
+    <div class="container-fluid">
+
+  <!--Start Dashboard Content-->
+
+	<div class="card mt-3">
+    <div class="card-content">
+        <div class="row row-group m-0">
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Citas hoy <span class="float-right"><img src="images/cita.png"></i></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:55%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">Total citas <span class="float-right">14 <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Recetas <span class="float-right"><img src="images/documento.png"></i></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:55%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">Total Resetas <span class="float-right">16 <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">Pacientes <span class="float-right"><img src="images/paciente.png"></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:55%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">Total pacienetes <span class="float-right">28 <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3 border-light">
+                <div class="card-body">
+                  <h5 class="text-white mb-0">En espera<span class="float-right"><img src="images/reloj.png"></span></h5>
+                    <div class="progress my-3" style="height:3px;">
+                       <div class="progress-bar" style="width:55%"></div>
+                    </div>
+                  <p class="mb-0 text-white small-font">Total en espera <span class="float-right">19 <i class="zmdi zmdi-long-arrow-up"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>  
+	  
+	<div class="row">
+     <div class="col-12 col-lg-8 col-xl-8">
+	    <div class="card">
+		 <div class="card-header">Grafica visitantes anual
+		   <div class="card-action">
+			 <div class="dropdown">
+			 <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+			  <i class="icon-options"></i>
+			 </a>
+				<div class="dropdown-menu dropdown-menu-right">
+				<a class="dropdown-item" href="javascript:void();">Accion</a>
+				<a class="dropdown-item" href="javascript:void();">Ninguna accion</a>
+				<a class="dropdown-item" href="javascript:void();">Algo mas aqui</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="javascript:void();">Otro</a>
+			   </div>
+			  </div>
+		   </div>
+		 </div>
+		 <div class="card-body">
+		    <ul class="list-inline">
+			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-white"></i>Nuevos visistantes</li>
+			  <li class="list-inline-item"><i class="fa fa-circle mr-2 text-light"></i>Antiguos visitantes</li>
+			</ul>
+			<div class="chart-container-1">
+			  <canvas id="chart1"></canvas>
+			</div>
+		 </div>
+		 
+		 <div class="row m-0 row-group text-center border-top border-light-3">
+		   <div class="col-12 col-lg-4">
+		     <div class="p-3">
+		       <h5 class="mb-0">45.87M</h5>
+			   <small class="mb-0">Visitantes general <span> <i class="fa fa-arrow-up"></i> 2.43%</span></small>
+		     </div>
+		   </div>
+		   <div class="col-12 col-lg-4">
+		     <div class="p-3">
+		       <h5 class="mb-0">15:48</h5>
+			   <small class="mb-0">Duracion visistantes<span> <i class="fa fa-arrow-up"></i> 12.65%</span></small>
+		     </div>
+		   </div>
+		   <div class="col-12 col-lg-4">
+		     <div class="p-3">
+		       <h5 class="mb-0">245.65</h5>
+			   <small class="mb-0">visitantes/pagina <span> <i class="fa fa-arrow-up"></i> 5.62%</span></small>
+		     </div>
+		   </div>
+		 </div>
+		 
+		</div>
+	 </div>
+
+     <div class="col-12 col-lg-4 col-xl-4">
+        <div class="card">
+           <div class="card-header">Grafica servicios hospitalarios
+             <div class="card-action">
+             <div class="dropdown">
+             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+              <i class="icon-options"></i>
+             </a>
+              <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="javascript:void();">Accion</a>
+              <a class="dropdown-item" href="javascript:void();">Ninguna accion</a>
+              <a class="dropdown-item" href="javascript:void();">Algo mas aqui</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="javascript:void();">Otro</a>
+               </div>
+              </div>
+             </div>
+           </div>
+           <div class="card-body">
+		     <div class="chart-container-2">
+               <canvas id="chart2"></canvas>
+			  </div>
+           </div>
+           <div class="table-responsive">
+             <table class="table align-items-center">
+               <tbody>
+                 <tr>
+                   <td><i class="fa fa-circle text-white mr-2"></i>Consulta</td>
+                   <td>300</td>
+                   <td>+55%</td>
+                 </tr>
+                 <tr>
+                   <td><i class="fa fa-circle text-light-1 mr-2"></i>Pediatria</td>
+                   <td>250</td>
+                   <td>+25%</td>
+                 </tr>
+                 <tr>
+                   <td><i class="fa fa-circle text-light-2 mr-2"></i>Odontologia</td>
+                   <td>100</td>
+                   <td>+15%</td>
+                 </tr>
+                 <tr>
+                   <td><i class="fa fa-circle text-light-3 mr-2"></i>Otro</td>
+                   <td>55</td>
+                   <td>+5%</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+         </div>
+     </div>
+	</div><!--End Row-->
+	
+	<div class="row">
+	 <div class="col-12 col-lg-12">
+	   <div class="card">
+	     <div class="card-header">Pacientes con citas hoy.
+		  <div class="card-action">
+             <div class="dropdown">
+             <a href="javascript:void();" class="dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+              <i class="icon-options"></i>
+             </a>
+              <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="javascript:void();">Accion</a>
+              <a class="dropdown-item" href="javascript:void();">Ninguna accion</a>
+              <a class="dropdown-item" href="javascript:void();">Algo mas aqui</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="javascript:void();">Otro</a>
+               </div>
+              </div>
+             </div>
+		 </div>
+	       <div class="table-responsive">
+                 <table class="table align-items-center table-flush table-borderless">
+                  <thead>
+                   <tr>
+                     <th>Nombre del paciente</th>
+                     <th>Foto</th>
+                     <th>#Identificacion</th>
+                     <th>Servicio</th>
+                     <th>Fecha</th>
+                     <th>Tiempo de espera</th>
+                   </tr>
+                   </thead>
+                   <tbody><tr>
+                    <td>juan hernandez</td>
+                    <td><img src="img/perfil/profile2.jpg" class="product-img" alt="product img"></td>
+                    <td>9405822</td>
+                    <td>odontologia</td>
+                    <td>1 julio 2024</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>Eugenio derbez</td>
+                    <td><img src="img/perfil/profile3.jpg" class="product-img" alt="product img"></td>
+                    <td>9405820</td>
+                    <td>nutricion</td>
+                    <td>1 julio 2024</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 60%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>carlos mario</td>
+                    <td><img src="img/perfil/profile4.jpg" class="product-img" alt="product img"></td>
+                    <td>9405830</td>
+                    <td>odontologia</td>
+                    <td>1 julio 2024</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>antonio arrollo</td>
+                    <td><img src="img/perfil/profile5.jpg" class="product-img" alt="product img"></td>
+                    <td>9405825</td>
+                    <td>neurologia</td>
+                    <td>1 julio 2024</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                        </div></td>
+                   </tr>
+
+                   <tr>
+                    <td>anderson contrera</td>
+                    <td><img src="img/perfil/profile6.jpg" class="product-img" alt="product img"></td>
+                    <td>9405840</td>
+                    <td>General</td>
+                    <td>1 julio 2024</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+                        </div></td>
+                   </tr>
+				   
+				   <tr>
+                    <td>camilo sevillano</td>
+                    <td><img src="img/perfil/profile7.jpg" class="product-img" alt="product img"></td>
+                    <td>9405825</td>
+                    <td>Oftamologia</td>
+                    <td>1 julio 2024</td>
+					<td><div class="progress shadow" style="height: 3px;">
+                          <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                        </div></td>
+                   </tr>
+
+                 </tbody></table>
+               </div>
+	   </div>
+	 </div>
+	</div><!--End Row-->
+
+      <!--End Dashboard Content-->
+	  
+	<!--start overlay-->
+		  <div class="overlay toggle-menu"></div>
+		<!--end overlay-->
+		
+    </div>
+    <!-- End container-fluid-->
+    
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	
+	<!--Start footer-->
+	<footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2024 Jorge Luis Vergara Contrera
+        </div>
+      </div>
+    </footer>
+	<!--End footer-->
+	
+  <!--start color switcher-->
+   <div class="right-sidebar">
+    <div class="switcher-icon">
+      <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
+    </div>
+    <div class="right-sidebar-content">
+
+      <p class="mb-0">Gaussion Texture</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme1"></li>
+        <li id="theme2"></li>
+        <li id="theme3"></li>
+        <li id="theme4"></li>
+        <li id="theme5"></li>
+        <li id="theme6"></li>
+      </ul>
+
+      <p class="mb-0">Gradient Background</p>
+      <hr>
+      
+      <ul class="switcher">
+        <li id="theme7"></li>
+        <li id="theme8"></li>
+        <li id="theme9"></li>
+        <li id="theme10"></li>
+        <li id="theme11"></li>
+        <li id="theme12"></li>
+		<li id="theme13"></li>
+        <li id="theme14"></li>
+        <li id="theme15"></li>
+      </ul>
+      
+     </div>
+   </div>
+  <!--end color switcher-->
+   
+  </div><!--End wrapper-->
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+ 
+ <!-- simplebar js -->
+  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <!-- sidebar-menu js -->
+  <script src="assets/js/sidebar-menu.js"></script>
+  <!-- loader scripts -->
+  <script src="assets/js/jquery.loading-indicator.js"></script>
+  <!-- Custom scripts -->
+  <script src="assets/js/app-script.js"></script>
+  <!-- Chart js -->
+  
+  <script src="assets/plugins/Chart.js/Chart.min.js"></script>
+ 
+  <!-- Index js -->
+  <script src="assets/js/index.js"></script>
+  <!-- Bootstrap iconos -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+  </svg>
+	  <!-- Aqui finaliza Bootstrap iconos -->
+  
+</body>
+</html>
